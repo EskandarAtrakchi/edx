@@ -1,0 +1,43 @@
+
+		
+		<!DOCTYPE HTML><!-- This file uses HTML5-->
+		<html>
+			<head>
+			<title>Live prices made by Eskandar Atrakchi</title>
+			
+			</head>
+			<style>
+		a:hover {
+		background-color: #00cccc;
+		color: green;
+		opacity: 1;
+		fill: black;
+		box-shadow: grey;
+		cursor: pointer;
+		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+	    padding: 2.5px 4.25%;
+		border-radius: 0.5654321rem;
+		padding: 2.5px 1.25px;
+		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+		transition: 1.86s;
+		transition: background-color 1.3723s ease-out
+		}
+
+		
+	
+			</style>
+				<body style="padding:25%;">
+			
+				<h2><strong>Global Crypto Charts</strong></h2>
+			<script>!function(){var e=document.getElementsByTagName("script"),
+				t=e[e.length-1],n=document.createElement("script");
+				 function r(){var e=crCryptocoinPriceWidget.init
+				 ({base:"USD,EUR",items:"BTC,ETH,XRP",backgroundColor:"E0E0D9",streaming:"1",rounded:"1",boxShadow:"9",border:"5"});
+					t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",
+					n.async=!0,n.readyState?n.onreadystatechange=function()
+					{"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}
+					:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+						</script>
+						
+							</body>
+								</html>
