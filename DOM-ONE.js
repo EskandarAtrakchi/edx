@@ -23,7 +23,7 @@
     document.getElementById('lastVisitDate').innerHTML = lastVisitDate;
     timesVisited++;
     document.getElementById('report').innerHTML = timesVisit;
-    //d
+    
     var myLastVisit = {}
     myLastVisit.date = new Date();
     myLastVisit.numVisit = timesVisit;
