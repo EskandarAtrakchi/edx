@@ -1,4 +1,4 @@
-You have now accessed this page <span id="report"></span> times.
+You have now accessed <span id="report"></span> times.
 <p>
     your last vist was <span id="lastVisitDate"></span>.
 </p>
