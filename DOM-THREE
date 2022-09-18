@@ -32,7 +32,7 @@
 
             }
         }
-
+        //addEventListener
         var mousehouverMe =document.getElementsById('mouseOverMe');
         mousehouverMe.addEventListener('mouseover', Bold);
         mousehouverMe.addEventListener('mouseout', restore);
