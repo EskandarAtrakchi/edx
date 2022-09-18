@@ -1,1 +1,13 @@
+You have now accessed this page <span id="report"></span> times.
+<p>
+    your last vist was <span id="lastVisitDate"></span>.
+</p>
+<script>
+    timesVitited = 0;
+    lastVisitDate = 'never';
 
+    if (localStorage.lastVisit) {
+        var lastVisit = JSON.parse(localStorage.lastVisit);
+        
+    }
+</script>
