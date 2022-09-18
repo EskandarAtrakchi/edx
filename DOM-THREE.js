@@ -14,7 +14,7 @@
 
     <script>
         function Bold () {
-            var divs = getElementByClassName('highlightText');
+            var divs = document.getElementByClassName('highlightText');
             for (var i = 0; i < divs.length; i++) {
                 divs[i].style.color = 'red';
                 divs[i].style.fontWeight = 'bold';
@@ -24,7 +24,7 @@
         }
 
         function restore () {
-            var divs = getElementByClassName('highlightText');
+            var divs = document.getElementByClassName('highlightText');
             for (var i = 0; i < divs.length; i++) {
                 divs[i].style.color = 'black';
                 divs[i].style.fontWeight = 'normal';
@@ -33,9 +33,9 @@
             }
         }
         //addEventListener
-        var mousehouverMe =document.getElementsById('mouseOverMe');
-        mousehouverMe.addEventListener('mouseover', Bold);
-        mousehouverMe.addEventListener('mouseout', restore);
+        var x =document.getElementById('mouseOverMe');
+        x.addEventListener('mouseover', Bold);
+        x.addEventListener('mouseout', restore);
     </script>
 </body>
 </html>
