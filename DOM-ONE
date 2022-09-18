@@ -3,11 +3,20 @@ You have now accessed this page <span id="report"></span> times.
     your last vist was <span id="lastVisitDate"></span>.
 </p>
 <script>
-    timesVitited = 0;
+    timesVisited = 0;
     lastVisitDate = 'never';
 
     if (localStorage.lastVisit) {
         var lastVisit = JSON.parse(localStorage.lastVisit);
-        
+        timesVisited = lastVisit.numVisits;
+        lastVisitDate = lastVisit.date;
     }
-</script>
+    document.getElementById('lastVisitDate').innerHTML = lastVisitDate;
+    timesVisited++;
+    document.getElementById('report').innerHTML = timesVisit;
+    //d
+    var myLastVisit = {}
+    myLastVisit.date = new Date();
+    myLastVisit.numVisit = timesVisit;
+    localStorage.lastVisit = JSON.stringify(myLastVisit);
+</script> 
