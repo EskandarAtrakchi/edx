@@ -20,7 +20,7 @@
             var numGUIsubmitted = document.getElementById('numClick');
             if (clicks == 1) 
                 numGUIsubmitted.innerHTML = 'Once';
-            
+            //name been corrected 
             else 
                 numGUIsubmitted.innerHTML = clicks + ' times';
         }
