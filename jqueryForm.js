@@ -10,30 +10,30 @@
 <body>
     <form>
         <select name="choose">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
         </select>
         <p>
-            <input type="radio" name="species" value="dog">Dog</input>
-            <input type="radio" name="species" value="cat">Cat</input>
-            <input type="radio" name="species" value="bird">Bird</input>
+            <input type="radio" name="Level" value="Low">Low</input>
+            <input type="radio" name="Level" value="Mid">Mid</input>
+            <input type="radio" name="Level" value="High">High</input>
             <p>
-            <input type="checkbox" value="black">Black</input>
-            <input type="checkbox" value="brown">Brown</input>
-            <input type="checkbox" value="white">White</input>
+            <input type="checkbox" value="WalletOne">WalletOne</input>
+            <input type="checkbox" value="WalletTwo">WalletTwo</input>
+            <input type="checkbox" value="WalletThree">WalletThree</input>
     </form>
     <p>
-        The animal that been registered is a <span id="AnimalType">animal</span><span id="AnimalColor"></span><span id="AnimalGender"></span>.
+        You have Entered <span id="gasFees">Wallet</span><span id="WalletNumber"></span><span id="coinSelection"></span>.
         
     <script>
         //handling select box 
         $("select : [ name = ' choose ' ] ") . change (function () {
-            $('#AnimalGender').html($(this).val());
+            $('#coinSelection').html($(this).val());
         });
         //handling radio buttons 
-        $("input : radio [ name = 'species' ]").change(function () {
+        $("input : radio [ name = 'Level' ]").change(function () {
             if ( $(this).prop('checked')) {
-                $('#AnimalType').html($(this).val());
+                $('#gasFees').html($(this).val());
             }
         });
 
@@ -50,17 +50,17 @@
                     Checked.splice(index, 1);
                 }
             }
-            $('#AnimalColor').html(' ');
+            $('#WalletNumber').html(' ');
             for (var i = 0; i < Checked.length; i ++) {
-                $('#AnimalColor').append(Checked[i]);
+                $('#WalletNumber').append(Checked[i]);
 
             }
 
             if (i < Checked.length -1) {
-                $('#AnimalColor').append(', ');
+                $('#WalletNumber').append(', ');
             }
             else {
-                $('#AnimalColor').appen(' ');
+                $('#WalletNumber').appen(' ');
             }
         });
     </script>
