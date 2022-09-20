@@ -36,9 +36,33 @@
                 $('#AnimalType').html($(this).val());
             }
         });
-        //handling the check box
-        //var Checked = [];
 
+        //handling the check box
+        var Checked = [];
+        $('input : checkbox').change(function () {
+            var value = $(this).val();
+            if ($(this).prop('checked')) {
+                Ckecked.push(value);
+            }
+            else {
+                var index = Checked.indexOf(value);
+                if (index != -1) {
+                    Checked.splice(index, 1);
+                }
+            }
+            $('#AnimalColor').html(' ');
+            for (var i = 0; i < Checked.length; i ++) {
+                $('#AnimalColor').append(Checked[i]);
+
+            }
+
+            if (i < Checked.length -1) {
+                $('#AnimalColor').append(', ');
+            }
+            else {
+                $('#AnimalColor').appen(' ');
+            }
+        });
     </script>
 </body>
 </html>
