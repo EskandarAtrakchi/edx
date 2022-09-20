@@ -35,7 +35,7 @@
         <p>
             <button name="submit">Validate password</button>
         <script>
-            $("button [name = 'submit]").click(function () {
+            $("button [name = 'submit']").click(function () {
                 var passWordField = $("input [name = 'password']").val();
                 var isOK = true;
                 if (passWordField.length < 10) {
@@ -49,10 +49,10 @@
                 if (isOK == false) {
                     $('#accessMessage').hide();
                     $('#errorMessage').show();
-                    passWordField.removeClass("goodBox").addClass(errorBox);
+                    passWordField.removeClass("goodBox").addClass("errorBox");
                 }
                 else {
-                    $(.errorText).hide();
+                    $('.errorText').hide();
                     $('#accessMessage').show();
                     passWordField.removeClass("errorBox").addClass("goodBox");
                 }
