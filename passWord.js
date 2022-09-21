@@ -51,7 +51,7 @@
                     $('#errorMessage').show();
                     passWordField.removeClass("goodBox").addClass("errorBox");
                 }
-                else {
+                else { //isOK == true
                     $('.errorText').hide();
                     $('#accessMessage').show();
                     passWordField.removeClass("errorBox").addClass("goodBox");
